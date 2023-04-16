@@ -1,20 +1,21 @@
-import React, { useState } from "react";
+ import React, { useState } from "react";
 import "../styles/App.css";
 
 export default function App() {
-    const [theme , setTheme]=
-          useState("light")
-    const func=()=>{
-        if(theme==="light"){
-            setTheme("dark")
-        }else{
-            setTheme("light")
-        }
-    }
+    const [theme,setTheme] = useState("light")
+    const func =()=>{
+                if(theme==="light"){
+
+                    setTheme("dark")
+                }else{
+                    setTheme("light")
+                }
+
+            }
+
     return (
-        <div className="App">
-        id={theme=="light"?"light":"dark"}>
-    <h1>Newton School</h1>
+        <div className="App" id={theme==="light" ? "light" :"dark"}>
+            <h1>Newton School</h1>
             <div>
                 <form>
                     <label>UserName</label>
@@ -31,4 +32,3 @@ export default function App() {
             </label>
         </div>
     );
-}
