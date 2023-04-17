@@ -1,4 +1,4 @@
- import React, { useState } from "react";
+import React, { useState } from "react";
 import "../styles/App.css";
 
 export default function App() {
@@ -32,3 +32,4 @@ export default function App() {
             </label>
         </div>
     );
+}
